@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Escape the Silence</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
 
+<body>
+
+<div id="overlay"></div>
+<div id="grain"></div>
+
+<div id="game">
+
+  <h1 id="title">ESCAPE THE SILENCE</h1>
+
+  <div id="roomBox">
+    <p id="question">Loading...</p>
+
+    <input id="answer" placeholder="type your answer..." />
+
+    <div class="btn-group">
+      <button onclick="submitAnswer()">Submit</button>
+      <button onclick="getHint()">Whisper</button>
+    </div>
+
+    <div id="choices"></div>
+
+    <div id="hintBox"></div>
+  </div>
+
+</div>
+
+<!-- JUMPSCARE -->
+<div id="jumpscareScreen">
+  <img src="./media/ghost.jpg">
+</div>
+
+<audio id="jumpscare" src="./media/ghost.mp3.mpeg" preload="auto"></audio>
+<audio id="bgMusic" src="./media/back.mp3" loop autoplay muted></audio>
+
+<script src="./script.js"></script>
+</body>
+</html>
